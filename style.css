@@ -1,8 +1,9 @@
 body {
-    margin: 0;
+    margin: 68px 0 0 0;
     width: 100vw;
     height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #4a2a89;
 }

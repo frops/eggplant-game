@@ -79,14 +79,14 @@ function setup() {
      // Tetx bottom
     let styleBottom = new PIXI.TextStyle({
         fontFamily: "Helvetica Neue",
-        fontSize: 16,
+        fontSize: 17,
         fill: "#fff",
         dropShadow: "#000",
         dropShadowBlur: 5,
         dropShadowDistance: 3
     });
 
-    textBottom = new PIXI.Text("Разбей баклажан!", styleBottom);
+    textBottom = new PIXI.Text("Кликая на баклажан и убей его!", styleBottom);
     textBottom.x = (gameScene.width / 2) - textBottom.width/2;
     textBottom.y = 400;
 
