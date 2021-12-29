@@ -18,11 +18,11 @@ app.renderer.backgroundCoolor = 0xfff;
 app.renderer.view.style.position = 'absolute';
 
 let lifeBackMap = [
-    {"min": 90, "img": "ep2.png"},
-    {"min": 70, "img": "ep3.png"},
-    {"min": 50, "img": "ep4.png"},
-    {"min": 20, "img": "ep5.png"},
-    {"min": 0, "img": "ep6.png"},
+    {"min": 90, "img": "ep2.png", "text": "Ооо, начало положено. Продолжай!"},
+    {"min": 70, "img": "ep3.png", "text": "Неплохо, давай в том же духе"},
+    {"min": 50, "img": "ep4.png", "text": "Половина пути уже пройдено"},
+    {"min": 20, "img": "ep5.png", "text": "Почти потрачено"},
+    {"min": 0, "img": "ep6.png", "text": "Ееее! Баклажан повержен!"},
 ];
 
 document.body.appendChild(app.view);
@@ -78,6 +78,22 @@ function setup() {
     target.buttonMode = true;
     target.on("pointerdown", handlerClick);
 
+     // Tetx bottom
+    let styleBottom = new PIXI.TextStyle({
+        fontFamily: "Helvetica Neue",
+        fontSize: 16,
+        fill: "#fff",
+        dropShadow: "#000",
+        dropShadowBlur: 5,
+        dropShadowDistance: 3
+    });
+
+    textBottom = new PIXI.Text("Разбей баклажан!", styleBottom);
+    textBottom.x = (gameScene.width / 2) - textBottom.width/2;
+    textBottom.y = 400;
+
+    gameScene.addChild(textBottom);
+
     // Loading all eggplants
     lifeBackMap.forEach(function callback(val, index, array) {
          lifeBackMap[index].sprite = new PIXI.Sprite(id[val.img])
@@ -108,16 +124,20 @@ function play() {
 function handlerClick() {
     if (tragetClick == true) {
         value++;
-        life -= rand(1, 4);
+
+        if (life > 0) {
+        life = Math.max(0, life - rand(1, 2));
         score.text = "❤️ " + life;
 
         target.scale.x = 1.25;
         target.scale.y = 1.25;
+        
 
         tragetClick = false;
         timer = 10;
         
         changeTargetTexture();
+        }
     }
 }
 
@@ -128,8 +148,9 @@ function rand(min, max) { // min and max included
 function changeTargetTexture() {
     lifeBackMap.forEach(function callback(val, index, array) {
         if (life <= val.min) {
-            console.log(life, val.min);
             target.texture = val.sprite.texture;
+            textBottom.text = val.text;
+            textBottom.x = (gameScene.width / 2) - textBottom.width/2;
         }
     });
 }

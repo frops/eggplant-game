@@ -37,6 +37,22 @@
 			"spriteSourceSize": {"x":0,"y":131,"w":200,"h":92},
 			"sourceSize": {"w":200,"h":92}
 		},
+		"ep5.png":
+		{
+			"frame": {"x":200,"y":131,"w":192,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":200,"y":131,"w":192,"h":92},
+			"sourceSize": {"w":192,"h":92}
+		},
+		"ep6.png":
+		{
+			"frame": {"x":392,"y":131,"w":192,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":392,"y":131,"w":192,"h":92},
+			"sourceSize": {"w":192,"h":92}
+		},
 		"btn.png": {
 			"frame": {"x": 70, "y": 261, "w": 351, "h": 150},
 			"rotated": false,
