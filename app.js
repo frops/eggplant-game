@@ -1,5 +1,3 @@
-const { all } = require("promise-polyfill");
-
 const RESOURCE_PATH = "spritesheet.json";
 
 let App = PIXI.Application,
