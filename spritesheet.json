@@ -1,57 +1,57 @@
 {
 	"meta": {
 		"image": "spritesheet.png",
-		"size": {"w":660,"h":800},
+		"size": {"w":200,"h":131},
 		"scale": "1"
 	},
 	"frames": {
 		"ep1.png":
 		{
-			"frame": {"x":0,"y":0,"w":190,"h":131},
+			"frame": {"x":0,"y":0,"w":200,"h":131},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":190,"h":131},
-			"sourceSize": {"w":190,"h":131}
+			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":131},
+			"sourceSize": {"w":200,"h":131}
 		},
 		"ep2.png":
 		{
-			"frame": {"x":190,"y":0,"w":185,"h":126},
+			"frame": {"x":200,"y":0,"w":200,"h":131},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":190,"y":0,"w":185,"h":126},
-			"sourceSize": {"w":185,"h":126}
+			"spriteSourceSize": {"x":200,"y":0,"w":200,"h":131},
+			"sourceSize": {"w":200,"h":131}
 		},
 		"ep3.png":
 		{
-			"frame": {"x":376,"y":0,"w":190,"h":118},
+			"frame": {"x":400,"y":0,"w":200,"h":131},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":376,"y":0,"w":190,"h":118},
-			"sourceSize": {"w":190,"h":118}
+			"spriteSourceSize": {"x":400,"y":0,"w":200,"h":131},
+			"sourceSize": {"w":200,"h":131}
 		},
 		"ep4.png":
 		{
-			"frame": {"x":0,"y":131,"w":200,"h":92},
+			"frame": {"x":0,"y":131,"w":200,"h":131},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":131,"w":200,"h":92},
-			"sourceSize": {"w":200,"h":92}
+			"spriteSourceSize": {"x":0,"y":131,"w":200,"h":131},
+			"sourceSize": {"w":200,"h":131}
 		},
 		"ep5.png":
 		{
-			"frame": {"x":200,"y":131,"w":192,"h":92},
+			"frame": {"x":200,"y":131,"w":200,"h":131},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":200,"y":131,"w":192,"h":92},
-			"sourceSize": {"w":192,"h":92}
+			"spriteSourceSize": {"x":200,"y":131,"w":200,"h":131},
+			"sourceSize": {"w":200,"h":131}
 		},
 		"ep6.png":
 		{
-			"frame": {"x":392,"y":131,"w":192,"h":92},
+			"frame": {"x":400,"y":131,"w":200,"h":131},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":392,"y":131,"w":192,"h":92},
-			"sourceSize": {"w":192,"h":92}
+			"spriteSourceSize": {"x":400,"y":131,"w":200,"h":131},
+			"sourceSize": {"w":200,"h":131}
 		},
 		"btn.png": {
 			"frame": {"x": 70, "y": 261, "w": 351, "h": 150},
