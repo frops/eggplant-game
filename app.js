@@ -1,6 +1,6 @@
 const RESOURCE_PATH = "spritesheet.json";
 const MIN_DAMAGE = 1;
-const MAX_DAMAGE = 10;
+const MAX_DAMAGE = 5;
 const RAY_COUNT = 20;
 const RAY_MAX_WAY = 100;
 const RAY_SPEED = 0.1;
