@@ -37,6 +37,15 @@ let lifeBackMap = [
 
 document.body.appendChild(app.view);
 
+loadingText = new PIXI.Text("Загрузка..", new PIXI.TextStyle({
+    fontFamily: "Verdana",
+    fontSize: 25,
+    fill: "#fff"
+}));
+app.stage.addChild(loadingText);
+loadingText.anchor.set(0.5);
+loadingText.position.set(240);
+
 const loader = new PIXI.Loader();
 loader
     .add(RESOURCE_PATH)
